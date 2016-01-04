@@ -1,0 +1,2 @@
+*/10 * * * * /sbin/setuser abc php -q /config/www/bgpanel/admin/cron.php > /dev/null 2>&1
+

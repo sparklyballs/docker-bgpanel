@@ -7,4 +7,4 @@ chmod 666 "$MYSQL_DIR"/my.cnf
 fi
 
 cp "$MYSQL_DIR"/my.cnf /etc/mysql/my.cnf
-
+crontab /defaults/cronjob
