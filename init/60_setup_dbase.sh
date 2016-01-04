@@ -48,6 +48,7 @@ cat >> "$tempSqlFile" <<-EONEWSQL
 $MYSQL_PASS
 GRANT ALL ON *.* TO 'root'@'%' WITH GRANT OPTION ;
 DROP DATABASE IF EXISTS test ;
+CREATE DATABASE IF NOT EXISTS brightgamepanel;
 EONEWSQL
 echo "Setting Up Initial Databases"
 
