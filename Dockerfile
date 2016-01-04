@@ -22,6 +22,7 @@ apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 # add Custom files
 ADD defaults/ /defaults/
 ADD init/ /etc/my_init.d/
+ADD services/ /etc/service/
 RUN chmod -v +x /etc/service/*/run /etc/my_init.d/*.sh && \
 
 sed -i 's/key_buffer\b/key_buffer_size/g' /etc/mysql/my.cnf && \
